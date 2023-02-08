@@ -1,6 +1,6 @@
-FROM php:8.0-fpm-alpine
+FROM php:8.2-fpm-alpine
 
-LABEL maintainer="MegaThorx <megathorx@gmail.com>"
+LABEL maintainer="MegaThorx <megathorx@merx.dev>"
 
 RUN apk add --update --no-cache \ 
     nginx \ 
@@ -87,4 +87,3 @@ EXPOSE 80
 
 WORKDIR "/var/www/html"
 CMD /bin/sh /start.sh
-
